@@ -1,0 +1,1 @@
+This repository showcases two subtle yet important HTML errors that often go unnoticed. The first error involves trying to access an attribute that doesn't exist on an element.  The second focuses on accessibility by demonstrating the lack of an alt attribute for an image element. The solution file provides the corrected code.
