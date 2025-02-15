@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv" data-attribute="myValue"></div>
+
+  <script>
+    // Accessing an existing attribute
+    let x = document.getElementById("myDiv").getAttribute("data-attribute");
+    console.log(x); // Output: myValue
+
+    // Creating an img element with alt text
+    let img = document.createElement("img");
+    img.src = "image.jpg";
+    img.alt = "Description of the image"; // Added alt attribute for accessibility
+    document.body.appendChild(img);
+  </script>
+</body>
+</html>
