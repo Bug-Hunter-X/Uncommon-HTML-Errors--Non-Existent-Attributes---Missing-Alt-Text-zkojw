@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //Attempting to access a non-existent attribute
+    let x = document.getElementById("myDiv").getAttribute("nonExistentAttribute"); 
+    console.log(x); //This will return null, not throw an error, which might be unexpected for beginners
+
+    //Another example: Using a tag incorrectly
+    let img = document.createElement("img");
+    img.src = "image.jpg"; //this may work or break silently depending on other factors
+    // Missing alt attribute - this is an accessibility issue and may not throw an error, but it is a significant problem
+    document.body.appendChild(img);
+  </script>
+</body>
+</html>
